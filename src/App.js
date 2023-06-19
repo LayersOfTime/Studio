@@ -1,11 +1,9 @@
 import React from "react";
 import * as THREE from 'three'
-import { CameraShake, MeshReflectorMaterial, OrbitControls, PerspectiveCamera, softShadows, Sparkles } from "@react-three/drei";
-import { Effects } from "./Effects";
+import { CameraShake,OrbitControls, PerspectiveCamera} from "@react-three/drei";
 import { Environment } from '@react-three/drei';
 import { Canvas } from "@react-three/fiber";
 import Model from "./Model";
-import { Perf } from "r3f-perf";
 import hdri from "./static/potsdamer_platz_1k.hdr";
 
 

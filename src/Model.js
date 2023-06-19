@@ -1,13 +1,12 @@
 import React from "react";
 import * as THREE from 'three'
 import { MeshReflectorMaterial, useGLTF, useTexture, useVideoTexture } from "@react-three/drei";
-import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import model from './static/layersoftime-web_v4.gltf';
 import video from './static/final2.mp4';
 import normal from './static/bottom_n.jpg';
 
 
-function VideoMaterial({ url, normal }) {
+function VideoMaterial({ url }) {
     const texture = useVideoTexture(url)
     texture.flipY = false;
     return <meshStandardMaterial needsUpdate={false} map={texture} toneMapped={true} emissiveMap={texture} emissive={'white'} emissiveIntensity={1} />

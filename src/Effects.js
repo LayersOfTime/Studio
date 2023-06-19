@@ -1,5 +1,5 @@
-import { Bloom, ChromaticAberration, DepthOfField, EffectComposer, Noise, ToneMapping, Vignette } from '@react-three/postprocessing'
-import { BlendFunction, BlurPass, Resizer, KernelSize } from 'postprocessing'
+import { Bloom, ChromaticAberration, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
+import { BlendFunction, KernelSize } from 'postprocessing'
 
 
 export function Effects() {
