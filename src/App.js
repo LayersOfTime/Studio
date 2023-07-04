@@ -5,6 +5,7 @@ import { Environment } from '@react-three/drei';
 import { Canvas } from "@react-three/fiber";
 import Model from "./Model";
 import hdri from "./static/potsdamer_platz_1k.hdr";
+import Model2 from "./Model2";
 
 
 
@@ -62,6 +63,9 @@ export default function App() {
           minPolarAngle={Math.PI / 3} // highlight-line
         />
         <Model />
+        <Model2
+          position={[0,0.8,0]}
+         />
       </Canvas>
     </>
   );
